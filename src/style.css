@@ -3,7 +3,7 @@ body {
   background-color: green;
 }
 
-/*
+
 .card {
   display: inline-block;
   height: 500px;
@@ -29,4 +29,5 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}          */
+}          
+    
