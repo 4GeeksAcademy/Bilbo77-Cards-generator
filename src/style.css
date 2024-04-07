@@ -30,4 +30,6 @@ body {
     transform: translate(-50%, -50%);
   }
 }          
-    
+  .changeColor {
+    color: red;
+  }
