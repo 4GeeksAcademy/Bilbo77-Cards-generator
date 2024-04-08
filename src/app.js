@@ -14,9 +14,23 @@ window.onload = () => {
 
     let theSuits =  () => {
     let suits = ["&#9829;", "&#9830;", "&#9824;", "&#9827;"];
-    let changeColor = suits[0,1];
     let randomSuits = suits[Math.floor(Math.random() * suits.length)];
+    if (randomSuits === "&#9829;"){
+      return `<span style = "color: red;">${randomSuits}</span>`;
+    } else if (randomSuits === "&#9830;") {
+      return `<span style = "color: red;">${randomSuits}</span>`;
+    }else {
     return randomSuits;
+  }
   };
+
+  // Quería hacerlo con un operador ternario (y literal template) pero no he encontrado la manera de ponerle 2 condiciones,
+  // he intentado con 
+  // return randomSuits === "&#9829;" || "&#9830;" ? '<span style = "color: red;">' + randomSuits + '</span>' : randomSuits;
+  // pero salen todos los naipes rojos, también he probado con 
+  // return randomSuits === "&#9829;"  ? '<span style = "color: red;">' + randomSuits + '</span>' : "&#9830;" ? '<span style = "color: red;">' + randomSuits + '</span>'randomSuits : randomSuits;
+  // seguiré investigando..
+
+    
 
   
